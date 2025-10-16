@@ -8,10 +8,35 @@
     <title>bye2money</title>
   </head>
   <body>
-    <div id="root"></div>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <header class= "container-horizontal p-4 bg-slate-200">
+      <div class= "logo text-3xl font-serif">
+        Wise Wallet
+      </div>
+      <div class = "container-horizontal">
+        <button class = "bg-blue-500 text-white px-4 py-2 rounded">left</button> <!-- left button -->
+        <div class = "content-vertical">   <!-- year and month -->
+          <p>2023</p>
+          <p>8</p>
+          <p>August</p>
+        </div>
+        <button class = "bg-blue-500 text-white px-4 py-2 rounded">right</button><!-- right button -->
+      </div>
+      <div class = "container-horizontal p-4 bg-slate-200">
+        <div class="icon-toggle-group">
+          <button class="icon-toggle-btn">
+            <img src="/src/img/document_icon.png" class="icon" alt="내역">
+          </button>
+
+          <button class="icon-toggle-btn">
+            <img src="/src/img/calendar_icon.png" class="icon" alt="달력">
+          </button>
+
+          <button class="icon-toggle-btn">
+            <img src="/src/img/chart_icon.png" class="icon" alt="통계">
+          </button>
+        </div>
+      </div>
+    </header>
 
     <!-- <script type="module" src="/src/main.tsx"></script> -->
   </body>
