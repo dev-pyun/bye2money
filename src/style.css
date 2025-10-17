@@ -38,5 +38,6 @@
   /* ✅ NEW: 비활성 버튼에 마우스 올렸을 때 스타일 */
   .icon-toggle-btn:not(.active):hover {
     @apply bg-gray-200;
+    cursor: pointer;
   }
 }

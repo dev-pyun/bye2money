@@ -8,7 +8,7 @@
     <title>bye2money</title>
   </head>
   <body>
-    <header class= "container-horizontal p-4 bg-slate-200">
+    <header class= "container-horizontal p-4 pb-20 bg-slate-200">
       <div class= "logo text-3xl font-serif">
         Wise Wallet
       </div>
@@ -23,21 +23,62 @@
       </div>
       <div class = "container-horizontal p-4 bg-slate-200">
         <div class="icon-toggle-group">
-          <button class="icon-toggle-btn">
-            <img src="/src/img/document_icon.png" class="icon" alt="내역">
+          <button class="icon-toggle-btn active">
+            <img src="/img/document_icon.png" class="icon" alt="내역">
           </button>
 
           <button class="icon-toggle-btn">
-            <img src="/src/img/calendar_icon.png" class="icon" alt="달력">
+            <img src="/img/calendar_icon.png" class="icon" alt="달력">
           </button>
 
           <button class="icon-toggle-btn">
-            <img src="/src/img/chart_icon.png" class="icon" alt="통계">
+            <img src="/img/chart_icon.png" class="icon" alt="통계">
           </button>
         </div>
       </div>
     </header>
 
+    <main>
+      <div class="w-11/12 max-w-5xl mx-auto -mt-16 p-6 bg-white rounded-lg shadow-lg">
+        <div class="container-horizontal items-end space-x-4">
+          <div class="container-vertical flex-grow">
+            <p>일자</p>
+            <input type="date" value="2023-08-01" class="w-full"/>
+          </div>
+          <div class="container-vertical flex-grow">
+            <div class="container-vertical flex-grow">
+              <p>금액</p>
+              <input type="number" value="10000" class="w-full" />
+            </div>
+          </div>
+          <div class="container-vertical flex-grow">
+            <p>내용</p>
+            <input type="text" value="점심식사" class="w-full" />
+          </div>
+          <div class="container-vertical flex-grow">
+            <p>결제수단</p>
+            <select class="w-full">
+              <option value="카드">카드</option>
+              <option value="현금">현금</option>
+              <option value="이체">이체</option>
+            </select>
+          </div>
+          <div class="container-vertical flex-grow">
+            <p>분류</p>
+            <select class="w-full">
+              <option value="식비">식비</option>
+              <option value="교통">교통</option>
+            </select>
+          </div>
+          <button class="icon-toggle-btn bg-gray-100 p-3 rounded-full hover:bg-gray-500">
+            <img src="/img/check_icon.png" class="h-6 w-6" alt="등록">
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div id="modal-container" class="hidden">
+    </div>
     <!-- <script type="module" src="/src/main.tsx"></script> -->
   </body>
 </html>
