@@ -1,4 +1,5 @@
 import React, {useMemo, useState} from 'react';
+import IconToggle from './IconToggle.tsx';
 
 type HeaderProps = {
   initialYear?: number;
@@ -62,17 +63,7 @@ function Header({
         </div>
         <button className="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer" onClick={() => go(1)}>right</button>
       </div>
-      <div className="icon-toggle-group">
-        <button className="icon-toggle-btn active">
-          <img src="/img/document_icon.png" className="h-5 w-5" alt="내역" />
-        </button>
-        <button className="icon-toggle-btn">
-          <img src="/img/calendar_icon.png" className="h-5 w-5" alt="달력" />
-        </button>
-        <button className="icon-toggle-btn">
-          <img src="/img/chart_icon.png" className="h-5 w-5" alt="통계" />
-        </button>
-      </div>
+      <IconToggle />
     </header>
   );
 }
