@@ -50,20 +50,22 @@ function Header({
 
   return (
     // class -> className으로 변경
-    <header className="container-horizontal p-4 pb-20 bg-slate-200">
-      <div className="logo text-3xl font-serif">
-        Wise Wallet
-      </div>
-      <div className="container-horizontal">
-        <button className="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer" onClick={() => go(-1)}>left</button>
-        <div className="container-vertical text-center mx-4 font-serif">
-          <p className="text-sm">{year}</p>
-          <p className="text-2xl font-semibold">{monthNumber}</p>
-          <p className="text-sm">{monthName}</p>
+    <header className="p-4 pb-20 bg-slate-200 items-center">
+      <div className="container-horizontal mx-auto w-11/12 max-w-6xl flex-1">
+        <div className="logo text-3xl font-serif">
+          Wise Wallet
         </div>
-        <button className="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer" onClick={() => go(1)}>right</button>
+        <div className="container-horizontal">
+          <button className="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer" onClick={() => go(-1)}>left</button>
+          <div className="container-vertical text-center mx-4 font-serif">
+            <p className="text-3xl py-0.5">{year}</p>
+            <p className="text-5xl font-semibold py-0.5">{monthNumber}</p>
+            <p className="text-2xl py-0.5">{monthName}</p>
+          </div>
+          <button className="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer" onClick={() => go(1)}>right</button>
+        </div>
+        <IconToggle />        
       </div>
-      <IconToggle />
     </header>
   );
 }
